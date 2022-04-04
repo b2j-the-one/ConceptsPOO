@@ -20,9 +20,9 @@ namespace ConceptsPOO
         public override string ToString()
         {
             return $"{base.ToString()}" +
-                $"\n\tPourcentage commission: {CommissionPercentage:P2}" +
-                $"\n\tVentes................: {Sales:C2}" +
-                $"\n\tMontant à payer.......: {GetValueToPay():C2}";
+                $"\n\tPourcentage commission: {$"{CommissionPercentage:P2}", 18}" +
+                $"\n\tVentes................: {$"{Sales: C2}", 18}" +
+                $"\n\tMontant à payer.......: {$"{GetValueToPay():C2}", 18}";
         }
     }
 }
